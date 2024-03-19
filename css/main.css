@@ -1,0 +1,202 @@
+/*체크리스트*/
+.main-img {
+    width: 360px;
+    height: 498px;
+    margin-bottom:12px;
+    display: block;
+    padding-top: 98px;
+}
+.main-img img {
+    width: 100%;
+    height: 100%;
+}
+/*팁 배너*/
+.tipBanner {
+    width: 100%;
+    height: 100px;
+    background-color: var(--yellow-scale-30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+}
+.tipBanner img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.tipText {
+    display: flex;
+}
+.tipText > p {
+    color:#ff0000;
+}
+/*제품 리스트*/
+.ItemWrap {
+    margin-top:48px;
+    padding: 0 16px;
+}
+.best {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+    color:var(--yellow-scale-60);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.best a {
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-regular);
+    color:var(--grey-scale-70);
+}
+.best a > img {
+    width: 5px;
+    height: 10px;
+    margin-left: 8px;
+}
+.ItemList {
+    font-size: var(--font-size-11);
+    display: grid;
+    grid-template-columns: repeat(2, 156px);
+    column-gap:16px;
+}
+.item {
+    width: 156px;
+    height: 230px;
+}
+.item > img {
+    width: 100%;
+    border-radius: var(--border-5);
+}
+.itemText {
+    margin-top: 8px;
+}
+.itemText em {
+    font-weight:var(--font-weight-medium);
+}
+.itemText p {
+    color:var(--grey-scale-80);
+    display: block;
+    height: 26px;
+}
+.itemText strong {
+    color:var(--grey-scale-100);
+    font-weight: var(--font-weight-bold);
+    display: block;
+    margin-top: 5px;
+}
+/* 피드*/
+.pheedWrap {
+    width: 100%;
+    padding: 48px 16px 0; 
+}
+.pheedWrap .pheedPick  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+    color:var(--yellow-scale-60);
+    padding-bottom: 10px;
+}
+.pheedWrap .pheedPick > p {
+    text-transform: none;
+}
+.pheedWrap .pheedPick > a {
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-regular);
+    color:var(--grey-scale-70);
+}
+.pheedWrap .pheedPick a > img {
+    width: 5px;
+    height: 10px;
+    margin-left: 8px;
+}
+.pickList {
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+}
+.pickItem {
+    padding-top:12px;
+    height: 368px;
+    position: relative;
+}
+.itemGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 45px auto);
+    column-gap: 12px;
+}
+.itemGrid > img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 45px;
+}
+.itemGrid > p {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+}
+.itemGrid > small {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-regular);
+    color:var(--grey-scale-50);
+}
+.pickInside {
+    margin:12px 0 16px;
+    font-size: var(--font-size-14);
+}
+.pickItem::before {
+    content: '';
+    display: block;
+    width: 360px;
+    height: 2px;
+    background-color: var(--grey-scale-20);
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+.pickItem > img {
+    border-radius: var(--border-5);
+}
+.pick-btn {
+    margin-top: 20px;
+    height: 36px;
+    font-size: var(--font-size-12);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.pick-btn > a {
+    display: flex;
+    gap:10px;
+    width: 50%;
+    justify-content: center;
+}
+.pick-btn::after {
+    content: '';
+    display: block;
+    height: 36px;
+    width: 2px;
+    background-color: var(--grey-scale-20);
+    position: absolute;
+    left:50%;
+}
+.pick-btn::before {
+    content: '';
+    display: block;
+    width: 360px;
+    height: 2px;
+    background-color: var(--grey-scale-20);
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,71 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root {
+    font-size: 10px;
+
+    /* color */
+    --dark: #111111;
+    --white: #ffffff;
+    /*orange-scale-group*/
+    --orange-scale-10: #fff3eb;
+    --orange-scale-20: #ffeee1;
+    --orange-scale-30: #ffdbc1;
+    --orange-scale-40: #ff8b36; /*Normal*/
+    --orange-scale-50: #e67d31;
+    --orange-scale-60: #cc6f2b;
+    --orange-scale-70: #bf6829;
+    --orange-scale-80: #995320;
+    --orange-scale-90: #733f18;
+    --orange-scale-100: #593113;
+    /*yellow-scale-group*/
+    --yellow-scale-10: #fef8eb;
+    --yellow-scale-20: #fef4e1;
+    --yellow-scale-30: #fde9c0;
+    --yellow-scale-40: #f8b734; /*Normal*/
+    --yellow-scale-50: #dfa52f;
+    --yellow-scale-60: #c6922a;
+    --yellow-scale-70: #ba8927;
+    --yellow-scale-80: #956e1f;
+    --yellow-scale-90: #705217;
+    --yellow-scale-100: #574012;
+    /*grey-scale-group*/
+    --grey-scale-10: #fbfbfb;
+    --grey-scale-20: #f8f8f8;
+    --grey-scale-30: #f1f1f1;
+    --grey-scale-40: #d2d2d2; /*Normal*/
+    --grey-scale-50: #bdbdbd;
+    --grey-scale-60: #a8a8a8;
+    --grey-scale-70: #9e9e9e;
+    --grey-scale-80: #7e7e7e;
+    --grey-scale-90: #5e5e5e;
+    --grey-scale-100: #4a4a4a;
+
+    /* font-size */
+    --font-size-32: 3.2rem; /*32px*/
+    --font-size-28: 2.8rem; /*28px*/
+    --font-size-24: 2.4rem; /*24px*/
+    --font-size-22: 2.2rem; /*20*/
+    --font-size-16: 1.6rem; /*16*/
+    --font-size-14: 1.4rem; /*14*/
+    --font-size-12: 1.2rem; /*12*/
+    --font-size-11: 1.1rem; /*11*/
+
+    /* font-weight */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* font-family */
+    --font-family-NotoSans: "Noto Sans KR", sans-serif;
+
+    /* radius */
+    --border-4: 4px;
+    --border-8: 8px;
+
+}
+body {
+    font-family: var(--font-family-NotoSans);
+    font-weight: var(--font-weight-regular);
+}
