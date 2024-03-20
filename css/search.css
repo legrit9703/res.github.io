@@ -1,0 +1,146 @@
+.AppContainer {
+    background-color: var(--grey-scale-20);
+    height: 800px;
+    overflow: hidden;
+}
+.searchWrap {
+    padding: 62px 16px 0;
+    background-color: var(--white);
+    width: 100%;
+    height: 112px;
+    display: flex;
+    gap:16px;
+    align-items: center;
+}
+.searchWrap input {
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 32px;
+    border: 1px solid var(--grey-scale-30);
+    border-radius: var(--border-4);
+    background-position: 10px center;
+    background-size:12px;
+    padding: 0 12px;
+    text-indent: 16px;
+}
+input::placeholder {
+    color:var(--grey-scale-60);
+}
+.searchlist {
+    width: 100%;
+    height: 72px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    justify-content: space-between;
+}
+.searchlist .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+.searchlist .top strong {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+}
+#checkbox { 
+    display: none;
+}
+#checkbox:checked ~ .more-btn {
+    transition: 0.6s;
+    display: block; 
+    right:0;
+}
+.more-btn { 
+    display: none;
+}
+
+
+.searchlist .bottom {
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 12px;
+    font-size: var(--font-size-14);
+    color:var(--grey-scale-70)
+}
+.brandPick, .storePick {
+    margin: 8px 0;
+    width: 100%;
+    height: 182px;
+    padding: 48px 16px 20px;
+    background-color: var(--white);
+    align-items: center;
+}
+.brandPick em {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+    display: block;
+    margin-bottom: 12px;
+}
+.brandList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px 12px;
+    font-size: var(--font-size-12);
+    color:var(--grey-scale-100);
+    text-align: center;
+}
+.brandList a {
+    height: 34px;
+    padding: 10px;
+    border: 1px solid var(--grey-scale-40);
+    border-radius: var(--border-4);
+    display: inline-block;
+    
+}
+.storePick {
+    height: 100%;
+}
+.storePick em {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+    display: block;
+    margin-bottom: 12px;
+}
+.storeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px 12px;
+    font-size: var(--font-size-12);
+    color:var(--grey-scale-100);
+    text-align: center;
+}
+.storeList a {
+    height: 34px;
+    padding: 10px;
+    border: 1px solid var(--grey-scale-40);
+    border-radius: var(--border-4);
+    display: inline-block
+}
+.more-btn {
+    width: 156px;
+    height: 204px;
+    background-color: var(--white);
+    color:var(--grey-scale-60);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+    padding: 24px 16px 0;
+    border-radius: var(--border-12);
+    position: absolute;
+    top:152px;
+    right:0;
+    transition: 0.6s;
+    display: none;
+    right: -156px;
+    box-shadow: -2px 2px 4px var(--grey-scale-30);
+}
+.more-btn li {
+    margin-top: 24px;
+}
+.act {
+    color:var(--orange-scale-40);
+}

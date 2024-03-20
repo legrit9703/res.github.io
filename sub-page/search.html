@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 | 햄쥐품쥐</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <script defer src="../js/jquery-3.7.1.min.js"></script>
+    <script defer src="../js/jquery-ui.min.js"></script>
+    <script defer src="../js/swiper-bundle.min.js"></script>
+    <script defer src="../js/main.js"></script>
+</head>
+<body>
+    <section id ="mainSearch" class="AppContainer">
+        <div class="searchWrap">
+            <a href="../index.html">
+                <img src="../img/back-arrow.png" alt="뒤로가기">
+            </a>
+            <label for="searchText"></label>
+            <input type="text" id="searchText" name="search" rel="search" placeholder="검색할 내용을 입력해주세요.">
+        </div>
+        <div class="searchlist">
+            <div class="top">
+                <strong>
+                    최근 검색어
+                </strong>
+                <input type="checkbox" id="checkbox" name="checkbox" rle="checkbox">
+                <label for="checkbox"><img src="../img/more.png" alt="좀 더 보기"></label>
+                    <ul class="more-btn" id="pushMenu">
+                        <li><a href="#none">선택삭제</a></li>
+                        <li><a href="#none">전체삭제</a></li>
+                        <li class="act"><a href="#none">자동저장 기능 켜기</a></li>
+                    </ul>
+            </div>
+            <div class="bottom">
+                <p>최근 검색어가 없습니다.</p>
+            </div>
+        </div>
+        <section class="brandPick">
+            <em>브랜드 추천 검색어</em>
+            <ul class="brandList">
+                <li><a href="#none">햄토리아</a></li>
+                <li><a href="#none">햄찌</a></li>
+                <li><a href="#none">내햄존</a></li>
+                <li><a href="#none">햄숲</a></li>
+                <li><a href="#none">햄이네</a></li>
+                <li><a href="#none">햄쓰</a></li>
+                <li><a href="#none">햄찌락</a></li>
+                <li><a href="#none">존슨즈햄찌</a></li>
+                <li><a href="#none">햄햄</a></li>
+                <li><a href="#none">찌</a></li>
+            </ul>
+        </section>
+        <section class="storePick">
+            <em>스토어 추천 검색어</em>
+            <ul class="storeList">
+                <li><a href="#none">이동장</a></li>
+                <li><a href="#none">은신처</a></li>
+                <li><a href="#none">목욕탕</a></li>
+                <li><a href="#none">톱밥</a></li>
+                <li><a href="#none">배징</a></li>
+                <li><a href="#none">영양제</a></li>
+                <li><a href="#none">견과류</a></li>
+                <li><a href="#none">챗바퀴</a></li>
+                <li><a href="#none">급수기</a></li>
+                <li><a href="#none">분유</a></li>
+            </ul>
+        </section> 
+    </section>
+</body>
+</html>

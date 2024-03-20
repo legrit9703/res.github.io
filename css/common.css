@@ -1,8 +1,20 @@
+body {
+    background-color: var(--grey-scale-60);
+    overflow: hidden;
+}
 .AppContainer {
 	width: 360px;
-	margin: 0 auto;
+    height: 800px;
+	margin: 50px auto;
 	background-color: var(--white);
 	position: relative;
+}
+.PageScroll {
+    height: 800px;
+    overflow: scroll;
+}
+.PageScroll::-webkit-scrollbar {
+    display: none;
 }
 .AppContainer .logo {
     width: 52px;
@@ -16,7 +28,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: end;
-	position: fixed;
+	position: absolute;
+    top:0;
 	z-index: 3;
 }
 header h1{
@@ -34,19 +47,16 @@ h2 {
 }
 /*gnb*/
 .gnb {
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
+    position: absolute;
     bottom:0;
-    width: 360px;
+    width: 100%;
     height: 62px;
-    box-shadow: 0 -4px 8px #D6D6D6;
+    box-shadow: 0 -2px 4px #bfbfbf30;
     background-color: var(--white);
     display: flex;
     gap:8px;
     align-items: center;
     justify-content: center;
-	position: fixed;
 	z-index: 3;
     color:var(--grey-scale-70);
 }
@@ -66,7 +76,7 @@ h2 {
 .gnb .on {
     width: 62px;
     height: 62px;
-    border-radius: 100%;
+    border-radius: 50%;
     background:  linear-gradient(var(--orange-scale-40), var(--yellow-scale-40)) ;
     margin-bottom: 14px;
     align-items: center;
@@ -80,13 +90,17 @@ h2 {
     display: block;
     width: 74px;
     height: 74px;
-    border-radius: 33px;
+    border-radius: 50%;
     background-color: var(--white);
     position: absolute;
+    box-shadow: 0 -2px 4px #bfbfbf30;
     z-index: -1;
+    
 }
-.gnb .on .ToDay {
+.gnb .on > img {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg) brightness(103%) contrast(101%);
+    filter: brightness(0) invert(1); 
+filter: brightness(0) invert(1);
 }
 
 /*headerSearch*/
@@ -102,7 +116,6 @@ h2 {
     padding: 92px 16px 0;
 }
 .searcgWrap {
-    background-color: aqua;
     width: 360px;
     height: 48px;
     padding: 8px 0px;
@@ -116,23 +129,15 @@ h2 {
 .searcgWrap input {
     width: 100%;
     height: 100%;
+    border-radius: var(--border-4);
+    border: 1px solid var(--grey-scale-30); 
 }
-
-
-
-
-
-
-
-
-
 /*footer*/
 footer {
     width: 100%;
     height: 136px;
     margin: 16px 0 60px;
     padding: 0 16px;
-    background-color: var(--yellow-scale-30);
     display: flex;
     flex-direction: column;
     align-items: flex-start;

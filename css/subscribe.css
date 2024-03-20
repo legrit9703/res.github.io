@@ -1,0 +1,126 @@
+h1 {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+    color:var(--white);
+}
+/* 구독 브랜드 리스트 */
+.subscriebeWrap {
+    padding-top: 98px;
+    margin: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap:28px;
+}
+.subscribeWrap-title {
+    display: flex;
+    gap:12px;
+    align-items: end;
+}
+.subscribeWrap-title > em {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+}
+.subscribeWrap-title > p {
+    font-size: var(--font-size-12);
+    color:var(--grey-scale-70);
+    text-transform: none;
+}
+.subscriebrand-Wrap {
+    display: flex;
+    gap:12px;
+    overflow-x:scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width:100%;
+}
+.subscriebrand-Wrap::-webkit-scrollbar{
+    display: none; 
+}
+.subscriebrand-Wrap li {
+    width: 100%;
+    text-align: center;
+    font-size: var(--font-size-12);
+    color:var(--grey-scale-90);
+}
+.subscriebrand-Wrap li > a {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.subscriebrand-Wrap li > img {
+    margin-bottom: 8px;
+}
+.on > a {
+    font-weight: var(--font-weight-bold);
+    color:var(--orange-scale-40);
+}
+/* 브랜드별 제품 리스트 */
+.Item-Wrap {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+.Item-Wrap-title {
+    display: flex;
+    align-items: end;
+    gap:4px;
+    margin-bottom: 24px;
+}
+.Item-Wrap-title > em {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+}
+.Item-Wrap-title > p {
+    font-size: var(--font-size-12);
+    color:var(--grey-scale-80);
+}
+.itemList {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.itemBox {
+    display: flex;
+    gap:12px;
+    height: 124px;
+    width: 100%;
+}
+.itemText {
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    justify-content: center;
+}
+.itemText > em {
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-medium);
+}
+.itemText > small {
+    height: 40px;
+    font-size: var(--font-size-11);
+    color:var(--grey-scale-80);
+}
+.star-btn button {
+    border: none;
+    background-color: inherit;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    position: relative;
+}
+.star-btn button > img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.Item-Wrap button {
+    border: none;
+    background-color: inherit;
+    margin: 24px 0;
+    cursor: pointer;
+    font-size: var(--font-size-12);
+    color:var(--grey-scale-80);
+}
