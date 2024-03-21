@@ -5,11 +5,65 @@
     margin-bottom:12px;
     display: block;
     padding-top: 56px;
+    position: relative;
 }
 .main-img img {
     width: 100%;
     height: 100%;
 }
+.pointBox {
+    width: 150px;
+    height: 22px;
+    border-radius: var(--border-4);
+    background-color: #ffffff50;
+    position: absolute;
+    top:64px;
+    left:16px;
+    display: flex;
+    font-size: var(--font-size-16);
+}
+.pointBox em {
+    color:var(--grey-scale-100);
+    -webkit-text-stroke: 0.1px var(--white);
+}
+.pointBox p {
+    color:var(--orange-scale-40);
+    -webkit-text-stroke: 0.1px var(--white);
+}
+.pointAdd {
+    font-size: var(--font-size-16);
+    color:var(--orange-scale-40);
+    -webkit-text-stroke: 0.1px var(--white);
+    position: absolute;
+    top:86px;
+    left:90px;
+}
+
+.gameWrap {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    position: absolute;
+    right: 16px;
+    bottom: 28px;
+}
+.gameWrap button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 4px solid var(--orange-scale-90);
+    cursor: pointer;
+}
+.gameWrap .play img {
+    width: 32px;
+    height: 32px;
+}
+.gameWrap .eat img {
+    width: 22px;
+    height: 32px;
+}
+
 /*팁 배너*/
 .tipBanner {
     width: 100%;
