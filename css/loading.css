@@ -1,0 +1,168 @@
+/* 로딩화면 */
+.loadingBox {
+    width: 100%;
+    height: 100%;
+    background-color: #FFD66C;
+    display: flex;
+    flex-direction: column;
+    gap:36px;
+    align-items: center;
+    justify-content: center;
+    animation:  hideLoadingBox 0.5s 1.2s forwards;
+
+}
+.loadingBar {
+    width: 186px;
+    height: 12px;
+    background-color: var(--white);
+    border-radius: var(--border-4);
+    position: relative;
+}
+.loadingBar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 5%;
+    border-radius: 6px;
+    background-color: var(--orange-scale-40);
+    position: absolute;
+    top:0;
+    left:0;
+    transform-origin:  100% 0% ;
+    animation: loading 1.5s ease forwards;
+}
+@keyframes loading{
+    0%{width: 0px; left: 0px}
+    100%{width: 100%; right: 0px}
+}
+@keyframes hideLoadingBox {
+    0% {opacity: 1;}
+    100% {display: none;}
+}
+
+/* 로그인 */
+.loginPage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.loginLogo {
+    position: absolute;
+    top:142px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 102px;
+}
+.loginBox {
+    position: absolute;
+    top:230px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    padding: 0 16px;
+}
+.loginBox input {
+    width: 100%;
+    height: 36px;
+    border-radius: var(--border-4);
+    border: 1px solid var(--grey-scale-30);
+    background-repeat: no-repeat;
+    background-position: 12px;
+    background-size: 14px;
+    text-indent: 34px;
+}
+.loginBox input::placeholder {
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+    color:var(--grey-scale-80);
+}
+.id {
+    background-image: url(../img/loginID.png);
+}
+.pw {
+    background-image: url(../img/loginPW.png);
+}
+.loginBox input:focus {
+    border: 1px solid var(--orange-scale-40);
+}
+.loginBtn {
+    width: 100%;
+    height: 50px;
+    background-color: var(--orange-scale-40);
+    border-radius: var(--border-4);
+    text-align: center;
+    line-height: 50px;
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-bold);
+    color:var(--white)
+}
+a:link,a:visited,a:hover {
+    color:var(--white);
+}
+.or {
+    position: absolute;
+    top:446px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: var(--font-size-12);
+    color:var(--grey-scale-80);
+}
+.or::before {
+    content: '';
+    display: block;
+    width: 126px;
+    height: 1px;
+    background-color: var(--grey-scale-30);
+    position: absolute;
+    top:50%;
+    right: 46px;
+}
+.or::after {
+    content: '';
+    display: block;
+    width: 126px;
+    height: 1px;
+    background-color: var(--grey-scale-30);
+    position: absolute;
+    top:50%;
+    left: 46px;
+}
+.snslogin {
+    position: absolute;
+    top:502px;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap:12px;
+}
+.snslogin a {
+    width: 72px;
+    height: 40px;
+    background-color: var(--grey-scale-20);
+    border-radius: var(--border-4);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.snslogin a img {
+    width: 28px;
+    height: 28px;
+}
+.snslogin a:nth-child(4) img {
+    width: 25px;
+    height: 24px;
+}
+.userjoin {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.userjoin:link,.userjoin:visited,.userjoin:hover {
+    color:var(--grey-scale-80);
+    text-decoration: underline;
+    font-size: var(--font-size-14);
+}

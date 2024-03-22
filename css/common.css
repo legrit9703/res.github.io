@@ -142,7 +142,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    color:var(--yellow-scale-90);
+    color:var(--grey-scale-90);
     gap:8px;
 }
 footer h3 {

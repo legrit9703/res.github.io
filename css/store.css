@@ -1,0 +1,108 @@
+header h1 {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+    color:var(--white);
+}
+.paddingWrap {
+    padding: 0 16px;
+}
+.banner {
+    display: block;
+    padding-top:56px;
+    left: -16px;
+}
+.cate {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:4px;
+    margin:24px 0;
+}
+.cate li {
+    width: 76px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: var(--font-size-11);
+    border: 1px solid var(--grey-scale-30);
+}
+/* 베스트 상품 */
+.bsetshopTit, .pickshopTit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.bsetshopTit > p,
+.pickshopTit > p{
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+    color:var(--orange-scale-40);
+}
+.bsetshopTit > a,
+.pickshopTit > a{
+    display: flex;
+    font-size: var(--font-size-12);
+    color:var(--grey-scale-60);
+    gap:8px;
+    align-items: center;
+}
+.bsetshopTit > a img,
+.pickshopTit > a img {
+    height: 10px;
+    width: 5px;
+}
+.bestshopWrap {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 16px;
+    row-gap: 20px;
+}
+.bestitem {
+    width: 156px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.item-text em {
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-medium);
+}
+.item-text p {
+    height: 26px;
+    color:var(--grey-scale-80);
+}
+.item-text strong {
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-bold);
+    color:var(--grey-scale-100);
+    display: inline-block;
+    margin-top: 5px;
+}
+/* 추천상품 */
+.Pick {
+    margin: 24px 0 40px;
+}
+.pickshopWrap {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.pickitem {
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+.pickitem img {
+    width: 124px;
+    height: 124px;
+}
+.pickitem > .item-text em {
+    display: block;
+    margin-bottom: 12px;
+}
+.pickitem > .item-text p {
+    height: 39px;
+}
+.pickitem > .item-text strong {
+    margin-top: 12px;
+}

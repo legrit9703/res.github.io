@@ -1,0 +1,69 @@
+header h1 {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+    color:var(--white);
+}
+.PageScroll {
+    padding: 0 16px;
+}
+
+.photoWrap {
+    padding-top: 76px;
+    display: flex;
+    gap:16px;
+}
+.photoItem {
+    width: 72px;
+    height: 72px;
+    border-radius: var(--border-4);
+    border: 1px solid var(--orange-scale-40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pheedTextarea label {
+    width: 100%;
+    height: 180px;
+}
+
+.pheedTextarea {
+    margin-top: 12px;
+    width: 100%;
+}
+.pheedTextarea textarea {
+    width: 100%;
+    height: 180px;
+    border: 1px solid var(--grey-scale-50);
+    outline-color: var(--orange-scale-40);
+    border-radius: var(--border-4);
+}
+textarea::placeholder {
+    font-size:var(--font-size-14);
+    color:var(--grey-scale-80);
+}
+.pheedTextarea small {
+    font-size: var(--font-size-11);
+    color:var(--grey-scale-80);
+    line-height: 1.4;
+}
+.menual {
+    margin-top: 126px;
+    font-size: var(--font-size-11);
+    color:var(--grey-scale-80);
+    line-height: 1.5;
+}
+.upload {
+    margin-top: 12px;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: var(--orange-scale-40);
+    border-radius: var(--border-4);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    line-height: 40px;
+}
+a:link,a:visited,a:hover {
+    color:var(--white);
+}
