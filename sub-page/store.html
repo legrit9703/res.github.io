@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스토어 | 햄쥐품쥐</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/store.css">
+    <script defer src="../js/jquery-3.7.1.min.js"></script>
+    <script defer src="../js/jquery-ui.min.js"></script>
+    <script defer src="../js/swiper-bundle.min.js"></script>
+    <script defer src="../js/main.js"></script>
+</head>
+<body>
+    <div class="AppContainer" id="container">
+        <header>
+            <h1><a href="../index.html">스토어</a></h1>
+            <div class="header-btn">
+                <a href="./popup.html"><img src="../img/header-bell.png" alt="알림"></a>
+                <a href="./search.html"><img src="../img/header-search.png" alt="검색"></a>
+            </div>
+        </header>
+        <!--GNB-->
+        <nav class="gnb">
+            <a href="./subscribe.html"><img class="subscribe" src="../img/gnb/subscribe.png" alt="구독서비스">
+                구독
+            </a>
+            <a class="on" href="./store.html"><img class="shopping" src="../img/gnb/shopping.png" alt="스토어">
+                스토어
+            </a>
+            <a href="../index.html"><img class="ToDay" src="../img/gnb/ToDay.png" alt="투데이">
+                투데이
+            </a>
+            <a href="./pheed.html"><img class="pheed" src="../img/gnb/pheed.png" alt="피드">
+                피드
+            </a>
+            <a href="./mypageEnd.html"><img class="MyPage" src="../img/gnb/MyPage.png" alt="마이페이지">
+                마이
+            </a>
+        </nav>
+        <div class="PageScroll">
+            <a class="banner" href="#none"><img src="../img/store/storebanner.png" alt="스토어배너">
+            </a>
+            <div class="paddingWrap"> 
+                <ul class="cate">
+                    <li><a href="#none">사료</a></li>
+                    <li><a href="#none">간식</a></li>
+                    <li><a href="#none">배딩/모래</a></li>
+                    <li><a href="#none">장난감/쳇바퀴</a></li>
+                    <li><a href="#none">은신처</a></li>
+                    <li><a href="#none">목욕/화장실</a></li>
+                    <li><a href="#none">영양제/이유식</a></li>
+                    <li><a href="#none">케이지/이동장</a></li>
+                    <li><a href="#none">급수/급식기</a></li>
+                    <li><a href="#none">기타</a></li>
+                    <li><a href="#none">특가</a></li>
+                    <li><a href="#none">특가</a></li>
+                </ul>
+                <section class="best">
+                    <h2>베스트 상품</h2>
+                    <div class="bsetshopTit">
+                        <p>best 상품</p>
+                        <a href="#none">더보기<img src="../img/plusArrow.png" alt="더보기"></a>
+                    </div>
+                    <div class="bestshopWrap">
+                        <a href="#none" class="bestitem">
+                            <img src="../img/store/bestshop01.png" alt=" 상품 이미지">
+                            <div class="item-text">
+                                <em>[패러그린]슬림 와일드 아스펜..</em>
+                                <p>슬림 와일드 아스펜 베딩 약<br> 1.2kg(중포장)</p>
+                                <strong>판매가 10,500원</strong>
+                            </div>
+                        </a>
+                        <a href="#none" class="bestitem">
+                            <img src="../img/store/bestshop02.png" alt=" 상품 이미지">
+                            <div class="item-text">
+                                <em>[햄토피아]몸에 좋고 맛도 좋은..</em>
+                                <p>프리미엄 드워프햄스터 사료</p>
+                                <strong>판매가 14,000원</strong>
+                            </div>
+                        </a>
+                        <a href="#none" class="bestitem">
+                            <img src="../img/store/bestshop03.png" alt=" 상품 이미지">
+                            <div class="item-text">
+                                <em>할란 아스펜 소분 베딩 500g</em>
+                                <p> Harlan Teklad Aspen bedding</p>
+                                <strong>판매가 2,000원</strong>
+                            </div>
+                        </a>
+                        <a href="#none" class="bestitem">
+                            <img src="../img/store/bestshop04.png" alt=" 상품 이미지">
+                            <div class="item-text">
+                                <em>[HASSY] 해씨 코코피트 3.5L</em>
+                                <p>[HASSY] 해씨 코코피트 3.5L</p>
+                                <strong>판매가 3,980원</strong>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section class="Pick">
+                    <h2>추천 상품</h2>
+                    <div class="pickshopTit">
+                        <p>추천 상품</p>
+                        <a href="#none">더보기<img src="../img/plusArrow.png" alt="더보기"></a>
+                    </div>
+                    <div class="pickshopWrap">
+                        <a href="#none" class="pickitem">
+                            <img src="../img/store/pickshop01.png" alt=" 상품 이미지">
+                            <div class="item-text">
+                                <em>[패러그린]슬림 와일드 아스펜..</em>
+                                <p>슬림 와일드 아스펜 베딩 약<br> 1.2kg(중포장)</p>
+                                <strong>판매가 10,500원</strong>
+                            </div>
+                        </a>
+                        <a href="#none" class="pickitem">
+                            <img src="../img/store/pickshop02.png" alt=" 상품 이미지">
+                            <div class="item-text">
+                                <em>[햄토피아]몸에 좋고 맛도 좋은..</em>
+                                <p>프리미엄 드워프햄스터 사료</p>
+                                <strong>판매가 14,000원</strong>
+                            </div>
+                        </a>
+                        <a href="#none" class="pickitem">
+                            <img src="../img/store/pickshop03.png" alt=" 상품 이미지">
+                            <div class="item-text">
+                                <em>할란 아스펜 소분 베딩 500g</em>
+                                <p> Harlan Teklad Aspen bedding</p>
+                                <strong>판매가 2,000원</strong>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <!--푸터-->
+                <footer>
+                    <h3>햄쥐품쥐</h3>
+                    <p>이태환, 조수정, 하지민<br>
+                        영진직업전문학교<br>
+                        반려동물프로젝트
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

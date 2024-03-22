@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | 햄쥐품쥐</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/membership.css">
+    <script defer src="../js/jquery-3.7.1.min.js"></script>
+    <script defer src="../js/jquery-ui.min.js"></script>
+    <script defer src="../js/swiper-bundle.min.js"></script>
+    <script defer src="../js/main.js"></script>
+</head>
+<body>
+    <div class="AppContainer" id="container">
+        <header>
+            <a href="./loding.html"><img src="../img/back-arrow.png" alt="뒤로가기">
+            </a>
+            <h1>이메일 회원가입</h1>
+        </header>
+        <div class="PageScroll">
+            <form>
+                <legend>회원가입</legend>
+                <label for="id">아이디
+                    <input type="email" id="id" name="id"  placeholder="example@naver.com">
+                </label>
+                <fieldset class="passwordWrap">
+                    <legend>비밀번호</legend>
+                    <label for="pw">비밀번호
+                        <input type="password" id="pw" name="password" placeholder="영문/ 숫자/ 특수문자 혼합 8~20자">
+                    </label> 
+                    <label for="pwchack">   
+                        <input type="password" id="pwchack" name="password" placeholder="비밀번호를 한번 더 입력해주세요.">
+                    </label>
+                </fieldset>
+                <label for="nick">닉네임
+                    <input type="text" id="nick" name="nick" placeholder="2-16자 이내로 입력해주세요.">
+                </label>
+                <label for="phone">휴대폰 번호
+                    <input type="tel" id="phone" name="phone" placeholder="‘-’를 제외한 숫자를 입력해주세요.">
+                </label>
+                <fieldset class="chackWrap">
+                    <legend>약관동의</legend>
+                    <label for="allChack" class="chackBox">
+                        <input type="checkbox" id="allChack" name="allChack">
+                        약관 전체 동의
+                    </label>
+                    <label for="ageAgree">
+                        <input type="checkbox" id="ageAgree" name="allChack">
+                        (필수)본인은 만 14세 이상입니다.
+                    </label>
+                    <label for="serviceAgree">
+                        <input type="checkbox" id="serviceAgree" name="allChack">
+                        (필수)서비스 이용약관 동의
+                    </label>
+                    <label for="userinforAgree">
+                        <input type="checkbox" id="userinforAgree" name="allChack">
+                        (필수)개인정보 수집 및 이용동의
+                    </label>
+                    <label for="AdAgree">
+                        <input type="checkbox" id="AdAgree" name="allChack">
+                        (선택)광고성 정보 수신 전체동의
+                    </label>
+                </fieldset>
+            </form>
+            <small>마케팅 정보 수집에 동의하시면, 이벤트 및 할인혜택 안내를 누구보다
+                빠르게 받아보실 수 있어요! 
+            </small><br>
+            <a class="AgreeBtn" href="./mypage02.html">동의하고 가입하기</a>
+        </div>
+        <div class="membershipDone">
+            가입이 완료되었습니다.
+            <a href="./mypage02.html">확인</a>
+        </div>
+    </div>
+</body>
+</html>
